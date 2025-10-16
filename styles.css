@@ -131,7 +131,13 @@ h2 {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(75, 20, 42, 0.2);
 }
-
+.case-details {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #FCFFFF;
+    border: 1px solid #4B142A;
+    border-radius: 5px;
+}
 .case-link {
     color: #4B142A;
     text-decoration: none;
