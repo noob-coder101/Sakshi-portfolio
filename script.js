@@ -58,6 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+document.querySelectorAll('.toggle-details').forEach(button => {
+    button.addEventListener('click', () => {
+        const details = button.nextElementSibling;
+        const isHidden = details.style.display === 'none' || !details.style.display;
+        details.style.display = isHidden ? 'block' : 'none';
+        button.textContent = isHidden ? 'Hide Details' : 'Learn More';
+    });
+});
     // Form submission
     document.querySelector('form').addEventListener('submit', e => {
         e.preventDefault();
